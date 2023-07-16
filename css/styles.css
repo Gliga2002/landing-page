@@ -144,7 +144,7 @@ a:active {
   color: #1f2937;
   font-size: 3.2rem;
   line-height: 1.2;
-  margin-bottom: 9.6rem;
+  margin-bottom: 7rem;
 }
 
 .heading-tertiary {
@@ -215,6 +215,37 @@ header {
 .feature-description {
   font-size: 1.5rem;
   line-height: 1.5;
+}
+
+
+/* Quote section */
+
+.section-quote {
+  padding: 4.8rem 0;
+  background-color: #e5e7eb;
+} 
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  padding:4.8rem 10rem;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.figure-quote {
+  font-size: 3.2rem;
+  font-style: italic;
+  font-weight: 200;
+  opacity: 0.5;
+  color:#1f2927;
+}
+
+.figure-caption {
+  font-weight: bold;
+  margin-left: auto;
+  font-size:1.6rem;
+  color:#1f2927;
 }
 
 
