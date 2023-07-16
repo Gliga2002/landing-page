@@ -280,6 +280,19 @@ header {
   color:#fdf2e9;
 }
 
+/* Footer section */
+
+.footer {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1f2927;
+  padding:2.4rem 4.3rem;
+  color:#f9faf8;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
 
 
 
