@@ -32,7 +32,7 @@ body {
 }
 
 .flex-gap {
-  gap: 10px;
+  gap: 1rem;
 }
 
 .lists {
@@ -59,6 +59,51 @@ a:active {
   color:#555;
 }
 
+.btn, .btn:link, .btn:visited {
+  display:inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  
+  /* Put transition on original state */
+
+  transition: all 0.3s;
+}
+
+.btn--full:link, .btn--full:visited {
+  background-color: #658ec8;
+  color: #fff;
+
+
+}
+
+.btn--full:hover, .btn-full:active {
+  background-color: #6a97cb;
+  color: #fff;
+
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color:#555;
+
+  /* border: 3px solid #fff; */
+  /* Tric to add border inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+}
+
 
 
 .logo-img {
@@ -72,14 +117,15 @@ a:active {
 .heading-secondary,
 .heading-tertiary {
   font-weight: 700;
-  color: #333;
+  color: #fff;
   /* color: #2e1907; */
   /* color: #343a40; */
   letter-spacing: -0.5px;
 }
 
 .heading-primary {
-  font-size: 6.2rem;
+  font-size: 4.8rem;
+  color:#f9faf8;
   line-height: 1.05;
   margin-bottom: 3.2rem;
 }
@@ -111,4 +157,32 @@ a:active {
 header {
   background-color: #1f2937;
 }
+
+
+/* Hero section */
+
+
+.section-hero {
+  background-color: #1f2937;
+  padding: 4.8rem 0;
+  /* height: 100vh; */
+}
+
+
+.hero {
+  gap: 9.6rem;
+  align-items:center;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.hero-description {
+  color:#e5e7eb;
+  font-size:1.8rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
 
