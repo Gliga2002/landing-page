@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/general.css">
   <title>Landing page</title>
+
+  <script defer src="https://kit.fontawesome.com/51148f5aa4.js" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
 </head>
+
 <body>
   <header class="header">
-  <div class="container flex flex--space-between">
-      <a href="#">
-        <img class="logo-img" src="./img/omnifood-logo.png" alt="forbers logo"/>
+    <div class="container flex flex--space-between">
+      <a class='logo-link' href="#">
+        <img class="logo-img" src="./img/omnifood-logo.png" alt="forbers logo" />
       </a>
       <nav class="header-nav">
         <ul class="lists flex flex-gap">
-          <li class="item"><a href="#">Section 1</a></li>
-          <li class="item"><a href="#">Section 2</a></li>
-          <li class="item"><a href="#">Section 3</a></li>
+          <li class="item"><a class='item--link' href="#section-feature">Section 1</a></li>
+          <li class="item"><a class='item--link' href="#section-quote">Section 2</a></li>
+          <li class="item"><a class='item--link' href="#section-slider">Section 3</a></li>
+          <li class="item"><a class='item--link' href="#section-cta">Section 4</a></li>
+          <li class="item"><a class='item--link' href="#section-tabbed">Section 5</a></li>
         </ul>
       </nav>
     </div>
@@ -29,48 +38,55 @@
       <div class="hero container flex">
         <div class="hero-text-box">
           <h1 class="heading-primary">This website is aweosome</h1>
-          <p class="hero-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio saepe minima laudantium odit laborum
-       obcaecati odio? </p>
-          <a class="btn btn--full"href="#">Sign up</a>
+          <p class="hero-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit optio saepe minima
+            laudantium odit laborum
+            obcaecati odio? </p>
+          <a class="btn btn--full" href="#">Sign up</a>
         </div>
         <div class="hero-img-box">
           <img class="hero-img " src="./img/hero.png" alt="hero img" />
         </div>
-    </div>
+      </div>
     </section>
 
-    <section class="section-feature">
+    <section id='section-feature' class="section section-feature">
       <div class="container">
         <h2 class="heading-secondary center-text">Section infomation</h2>
 
         <div class="features flex flex-gap-6">
           <figure class="feature-1 flex flex--column-allign flex-gap">
-            <img class="customer-img"src="img/customers/customer-1.jpg" alt="customer" />
-            <p class="feature-description center-text">Lorem ipsum dolor sit amet consectetur adipisicrem repellendus maxime it amet consectetur adipisirepellendus </p>
+            <img class="customer-img" src="img/customers/customer-1.jpg" alt="customer" />
+            <p class="feature-description center-text">Lorem ipsum dolor sit amet consectetur adipisicrem repellendus
+              maxime it amet consectetur adipisirepellendus </p>
           </figure>
 
           <figure class="feature-2 flex flex--column-allign flex-gap ">
-            <img class="customer-img"src="img/customers/customer-2.jpg" alt="customer" />
-            <p class="feature-description center-text">Lorem ipsum dolor sit amet consectetur adip it amet consectetur adipisicing elit. Dolorem repellendus </p>
+            <img class="customer-img" src="img/customers/customer-2.jpg" alt="customer" />
+            <p class="feature-description center-text">Lorem ipsum dolor sit amet consectetur adip it amet consectetur
+              adipisicing elit. Dolorem repellendus </p>
           </figure>
 
           <figure class="feature-3 flex flex--column-allign flex-gap">
-            <img class="customer-img"src="img/customers/customer-3.jpg" alt="customer" />
-            <p class="feature-description center-text">Lorem ipsum dolor sit amet consectetur adipillendus maxime it amet consectetur arepellendus </p>
+            <img class="customer-img" src="img/customers/customer-3.jpg" alt="customer" />
+            <p class="feature-description center-text">Lorem ipsum dolor sit amet consectetur adipillendus maxime it
+              amet consectetur arepellendus </p>
           </figure>
 
           <figure class="feature-4 flex flex--column-allign flex-gap">
-            <img class="customer-img"src="img/customers/customer-4.jpg" alt="customer" />
-            <p class="feature-description center-text">Lorem ipsum dolor sit amet consectetur adipisicmaxime it amet consectetur adipisicing elit. Dolordus </p>
+            <img class="customer-img" src="img/customers/customer-4.jpg" alt="customer" />
+            <p class="feature-description center-text">Lorem ipsum dolor sit amet consectetur adipisicmaxime it amet
+              consectetur adipisicing elit. Dolordus </p>
           </figure>
+        </div>
       </div>
-    </div>
     </section>
 
-    <section class="section-quote">
+    <section id='section-quote' class="section section-quote">
       <figure class="figure container">
         <blockquote class="figure-quote">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam voluptates itaque velit voluptatibus vitae magnam non doloremque aliquam, maiores numquam laborum consectetur, repudiandae officiis. Rem error nihil minus ipsam adipisci.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam voluptates itaque velit voluptatibus vitae
+          magnam non doloremque aliquam, maiores numquam laborum consectetur, repudiandae officiis. Rem error nihil
+          minus ipsam adipisci.
         </blockquote>
         <figcaption class="figure-caption">
           -Thor, God of Thunder
@@ -78,7 +94,79 @@
       </figure>
     </section>
 
-    <section class="section-cta">
+    <section id='section-slider' class="section section-slider">
+      <div class="slider">
+        <div class="slide"><img src="img/img-1.jpg" alt="Photo 1" /></div>
+        <div class="slide"><img src="img/img-2.jpg" alt="Photo 2" /></div>
+        <div class="slide"><img src="img/img-3.jpg" alt="Photo 3" /></div>
+        <div class="slide"><img src="img/img-4.jpg" alt="Photo 4" /></div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section id="section-tabbed" class="section section-tabbed">
+      <div class="tab-container container">
+        <div class="tab-container-buttons">
+          <button class="btn tab-container-button tab-container-button--1 tab-container-button--active" data-id="1">
+            <span>01</span>
+            Instant Transfers
+          </button>
+          <button class="btn tab-container-button tab-container-button--2" data-id="2">
+            <span>02</span>
+            Instant Loans
+          </button>
+          <button class="btn tab-container-button tab-container-button--3" data-id="3">
+            <span>03</span>
+            Instant Closing
+          </button>
+        </div>
+        <div class="tab-container-content tab-container-content--1  tab-container-content--active">
+          <div class="tab-icon tab-icon--upload">
+            <i class="fa-solid fa-upload fa-2x" style="color: var(--color-cream--opacity-1)"></i>
+          </div>
+          <div class="tab-content">
+            <h5 class="tab-content--heading">Tranfser money to anyone, instantly! No fees, no BS.</h5>
+            <p class="tab-content--paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+
+        <div class="tab-container-content tab-container-content--2">
+          <div class="tab-icon tab-icon--house">
+            <i class="fa-solid fa-house fa-2x" style="color: var(--color-green--opacity-1);"></i>
+          </div>
+          <div class="tab-content">
+            <h5 class="tab-content--heading">Buy a home or make your dreams come true, with instant loans.</h5>
+            <p class="tab-content--paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+              dolore
+              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt
+              mollit anim id est laborum.</p>
+          </div>
+        </div>
+
+        <div class="tab-container-content tab-container-content--3">
+          <div class="tab-icon tab-icon--person">
+            <i class="fa-solid fa-person-circle-xmark fa-2x" style="color: var(--color-red--opacity-1);"></i>
+          </div>
+          <div class="tab-content">
+            <h5 class="tab-content--heading">No longer need your account? No problem! Close it instantly.</h5>
+            <p class="tab-content--paragraph">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi
+              ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      </div>
+    </section>
+
+    <section id='section-cta' class="section section-cta">
       <div class="cta modal flex flex--space-between flex-gap">
         <div class="content">
           <h3 class="heading-tertiary margin-bottom-sm">Call to action.It's time!</h3>
@@ -92,4 +180,5 @@
     Copyright &copy; Darko Gligorijevic 2023
   </footer>
 </body>
+
 </html>
