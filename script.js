@@ -42,7 +42,7 @@ nav.addEventListener('click', function (e) {
   }
 });
 
-// Intersection Observer
+// Intersection Observer (sticky nav)
 
 const sectionFeature = document.querySelector('.section-hero');
 const header = document.querySelector('.header');
@@ -85,6 +85,38 @@ allSections.forEach((section) => {
   sectionObserver.observe(section);
   section.classList.add('section--hidden');
 });
+
+// Lazy loading
+
+window.addEventListener('load', () => {
+    const heroImg = document.querySelector('.hero-img');
+    const loadText = document.querySelector('.loading-text')
+  
+    // Replace src with data-src
+    heroImg.src = heroImg.dataset.src;
+  
+    heroImg.addEventListener('load', () => {
+      let load = 0;
+  
+      let int = setInterval(blurring, 30);
+  
+      function blurring() {
+      load++;
+  
+      if (load > 99) {
+      clearInterval(int);
+      }
+  
+      loadText.textContent = `${load}%`;
+      loadText.style.opacity = scale(load, 0, 100, 1, 0);
+      heroImg.style.filter = `blur(${scale(load, 0, 100, 30, 0)}px)`
+      }
+  
+      const scale = (num, in_min, in_max, out_min, out_max) => {
+      return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
+      }
+    })
+  })
 
 // Slider
 

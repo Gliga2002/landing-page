@@ -19,8 +19,21 @@ header {
   align-items: center;
 }
 
+.hero-img-box {
+  position: relative;
+}
+
 .hero-img {
   width: 100%;
+  filter: blur(30px);
+}
+
+.loading-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: #fff;
 }
 
 .hero-description {
